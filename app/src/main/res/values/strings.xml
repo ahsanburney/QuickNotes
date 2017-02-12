@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quick Notes</string>
+
+
+    <string name="file_name">Product.ser</string>
+    <string name="notes_saved">Notes Saved!</string>
+    <string name="no_notes">No Notes File Present</string>
+    <string name="date_format">EEE MMM d, h:mm a</string>
+    <string name="lastupdated" />
+    <string name="displaynotes" />
+    <string name="my_love_text">I love you</string>
+    <string name="addtext">Last Update:</string>
+    <string name="lasttimeland">Last Update:</string>
+</resources>

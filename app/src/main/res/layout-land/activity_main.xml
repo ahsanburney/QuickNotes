@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ahsanburney.quicknotes.MainActivity">
+
+
+    <TextView
+        android:text="@string/lastupdated"
+        android:layout_width="131dp"
+        android:layout_height="75dp"
+        android:id="@+id/lastupdated"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintRight_toLeftOf="@+id/main_notes"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.09"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="366dp"
+        android:layout_height="268dp"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:ems="10"
+        android:id="@+id/main_notes"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/notes_border"
+        android:text="@string/displaynotes"
+        tools:ignore="LabelFor"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:text="@string/lasttimeland"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:id="@+id/textView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/main_notes"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintHorizontal_bias="0.19"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lastupdated"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.98"
+        android:textStyle="bold"
+        android:textAlignment="textEnd"
+        android:textSize="21sp" />
+</android.support.constraint.ConstraintLayout>
